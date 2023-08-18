@@ -29,4 +29,7 @@
             {{ post.body|truncatewords:30|linebreaks }}
         {% endfor %}
     {% include "pagination.html" with page=posts %}
+    <h2>
+        <a href="{% url 'home:view_home' %}">Back home</a>
+    </h2>
 {% endblock %}

@@ -1,0 +1,10 @@
+{% extends "blog/base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+    <div id="logo-line-bottom">
+        <a class="logo-link" href="{% url 'home:view_home' %}" >Home</a>
+    </div>
+    <h2>
+        <a href="{% url 'blog:post_list' %}">Go to blog</a>
+    </h2>
+{% endblock %}
